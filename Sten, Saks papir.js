@@ -20,23 +20,18 @@ const getComputerChoice = () =>{
 const determineWinner = (userChoice, computerChoice) =>{
     if (userChoice === computerChoice){
         return "Uafgjort"
-    } if (userChoice === 'sten'){
-        if (computerChoice === 'papir'){
+    } if (userChoice === 'sten' && computerChoice === 'papir') {
             return "Computeren vandt"
-        }
-        else {
+        }  else {
             return "du vandt"}
-    } if (userChoice === 'saks'){
-        if(computerChoice === 'sten'){
+     if (userChoice === 'saks' && computerChoice === 'sten'){
             return "Computeren vinder"
         } else{
             return "Du vandt"}
-    } if (userChoice === 'papir'){
-        if (computerChoice === 'saks'){
+        if (userChoice === 'papir' && computerChoice === 'saks') {
             return 'computeren vandt'
         } else {
             return 'Du vandt'}
-    }
 }
 const playGame = () => {
     const userChoice = getUserChoice('sten');
